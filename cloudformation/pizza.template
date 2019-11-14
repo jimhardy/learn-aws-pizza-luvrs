@@ -20,7 +20,7 @@
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "10.0.1.0/24",
-        "AvailabilityZone": "us-west-2b",
+        "AvailabilityZone": "us-east-1",
         "VpcId": {
           "Ref": "vpc0d9ce469"
         },
@@ -135,7 +135,7 @@
       "Properties": {
         "AvailabilityZones": [
           "us-west-2a",
-          "us-west-2b"
+          "us-east-1"
         ],
         "Cooldown": "300",
         "DesiredCapacity": "2",
@@ -168,7 +168,7 @@
       "Type": "AWS::AutoScaling::LaunchConfiguration",
       "Properties": {
         "AssociatePublicIpAddress": true,
-        "ImageId": "ami-d0864bb0",
+        "ImageId": "ami-060cc1598b41625c2",
         "InstanceType": "t2.micro",
         "KeyName": "pizza-keys",
         "IamInstanceProfile": "pizza-ec2-role",
